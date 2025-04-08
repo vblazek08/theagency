@@ -1,7 +1,9 @@
 const Nav = () => {
   return (
-    <nav className="flex justify-between items-center py-4 px-8 text-white">
-      <a href="">theAgency</a>
+    <nav className="flex justify-between py-4  text-white">
+      <a href="">
+        <h1 className="font-extrabold text-2xl">theAgency</h1>
+      </a>
       <div className="hidden">
         <a href="">home.</a>
         <a href="">about.</a>

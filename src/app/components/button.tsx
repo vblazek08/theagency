@@ -1,4 +1,11 @@
-const Button = ({ size = "md", children }) => {
+import { ReactNode } from "react";
+
+interface ButtonProps {
+  size?: "sm" | "md" | "lg";
+  children: ReactNode;
+}
+
+const Button = ({ size = "md", children }: ButtonProps) => {
   const baseStyles = "text-green-600  border-2 border-green-600 text-center ";
 
   const sizes = {

@@ -1,13 +1,22 @@
 import Button from "../components/button";
+import Contact from "./contact";
 
 interface MainBlockProps {
   title: string;
   buttonText: string;
+  ShowContact?: boolean;
 }
 
-const MainBlock = ({ title, buttonText }: MainBlockProps) => {
+const MainBlock = ({
+  title,
+  buttonText,
+  ShowContact = true,
+}: MainBlockProps) => {
   return (
-    <div className="mt-20">
+    <div
+      className="pt-20 pb-20
+"
+    >
       <div className="bg-green-500 h-1.5 w-8"></div>
 
       <div className="mt-4">
@@ -19,6 +28,7 @@ const MainBlock = ({ title, buttonText }: MainBlockProps) => {
       </div>
 
       <div className="bg-green-500 h-0.5 w-full mt-8"></div>
+      {ShowContact && <Contact />}
     </div>
   );
 };

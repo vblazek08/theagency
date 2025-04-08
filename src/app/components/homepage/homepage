@@ -1,17 +1,17 @@
-import Nav from "./components/nav";
-import Container from "./components/container";
-import MainBlock from "./components/main";
-import Contact from "./components/contact";
-import Textcard from "./components/text-card";
-
-export default function Home() {
+import React from "react";
+import Nav from "..nav";
+import Container from "../container";
+import MainBlock from "../main";
+import Contact from "../contact";
+import Textcard from "../text-card";
+const HomePage = () => {
   return (
     <main>
       <Container>
         <Nav />
         <MainBlock
           title="An Innovative Agency For Forward-thinking Brands."
-          buttonText={"find out more"}
+          buttonText="find out more"
         />
         <Contact />
 
@@ -23,14 +23,16 @@ export default function Home() {
         <Textcard
           subtitle="Website / App Design."
           text="Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris."
-          line={false}
+          showLine={false}
         />
         <Textcard
           subtitle="Art Direction."
           text="Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris."
-          line={false}
+          showLine={false}
         />
       </Container>
     </main>
   );
-}
+};
+
+export default HomePage;

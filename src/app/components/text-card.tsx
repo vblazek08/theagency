@@ -6,8 +6,8 @@ interface TextProps {
 }
 const Textcard = ({ title, subtitle, text, line = true }: TextProps) => {
   return (
-    <div className="mt-16 flex flex-col justify-center">
-      {line && <div className="w-8 bg-green-600 h-1 mt-4"></div>}
+    <div className="mt-16 flex mb-16 flex-col justify-center">
+      {line && <div className="w-8 bg-green-600 h-1 mt-4 "></div>}
       <div>
         <h2 className="text-4xl font-extrabold mt-4">{title}</h2>
       </div>

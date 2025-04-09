@@ -3,6 +3,8 @@ import Nav from "../nav";
 import Container from "../container";
 import MainBlock from "../main";
 import Textcard from "../text-card";
+import Services from "../services";
+import Showcase from "@/app/showcase";
 const HomePage = () => {
   return (
     <div>
@@ -34,6 +36,8 @@ const HomePage = () => {
           line={false}
         />
       </Container>
+      <Services />
+      <Showcase />
     </div>
   );
 };

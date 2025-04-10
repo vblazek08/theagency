@@ -1,5 +1,5 @@
-import Container from "./container";
-import List from "./list";
+import Container from "../container";
+import List from "../list";
 const Services = () => {
   return (
     <div className="flex flex-col items-center justify-center pt-12 bg-zinc-800/30">

@@ -3,8 +3,10 @@ import Nav from "../nav";
 import Container from "../container";
 import MainBlock from "../main";
 import Textcard from "../text-card";
-import Services from "../services";
+import Services from "./services";
 import Showcase from "@/app/showcase";
+import Component from "@/app/component";
+import Aboutus from "@/app/components/homepage/about-us"; // Adjust the path as necessary
 const HomePage = () => {
   return (
     <div>
@@ -38,6 +40,15 @@ const HomePage = () => {
       </Container>
       <Services />
       <Showcase />
+      <Component
+        buttontext="view projects"
+        showParagraph={false}
+        showBottomHeading={false}
+        showBottomDivider={false}
+      />
+      <Container>
+        <Aboutus />
+      </Container>
     </div>
   );
 };

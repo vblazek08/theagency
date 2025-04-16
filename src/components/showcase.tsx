@@ -1,5 +1,5 @@
-import Component from "./component";
-import LogoShow from "./components/logo-show";
+import Component from "../components/component";
+import LogoShow from "./logo-show";
 
 const showcase = () => {
   return (

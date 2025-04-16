@@ -1,4 +1,4 @@
-import Button from "../components/button";
+import Button from "./button";
 import Contact from "./contact";
 
 interface MainBlockProps {
@@ -28,6 +28,7 @@ const MainBlock = ({
       </div>
 
       <div className="bg-green-500 h-0.5 w-full mt-8"></div>
+
       {ShowContact && <Contact />}
     </div>
   );

@@ -1,4 +1,4 @@
-import Button from "./components/button";
+import Button from "../components/button";
 
 interface ComponentProps {
   buttontext?: string;
@@ -28,13 +28,13 @@ const Component = ({
   topDividerClassName,
 }: ComponentProps) => {
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center bg-white/0">
       {showTopDivider && (
         <div className={`w-1 mt-12 h-8 bg-zinc-500 ${topDividerClassName}`} />
       )}
       {showTopHeading && (
         <div>
-          <h2>{topheadingtext}</h2>
+          <h2 className="font-bold text-2xl mt-4">{topheadingtext}</h2>
         </div>
       )}
       {showButton && (

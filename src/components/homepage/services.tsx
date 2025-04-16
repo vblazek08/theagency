@@ -13,25 +13,32 @@ const Services = () => {
             this is how we can help you.
           </h2>
           <List
-            text1="lorem ipsum dolor"
-            text2="lorem ipsum dolor"
-            text3="lorem ipsum dolor"
-            text4="lorem ipsum dolor"
-            text5="lorem ipsum dolor"
+            array={[
+              "lorem ipsum dolor",
+              "lorem ipsum dolor",
+              "lorem ipsum dolor",
+              "lorem ipsum dolor",
+              "lorem ipsum dolor",
+            ]}
           />
           <List
-            text1="lorem ipsum dolor"
-            text2="lorem ipsum dolor"
-            text3="lorem ipsum dolor"
-            text4="lorem ipsum dolor"
-            text5="lorem ipsum dolor"
+            array={[
+              "lorem ipsum dolor",
+              "lorem ipsum dolor",
+              "lorem ipsum dolor",
+              "lorem ipsum dolor",
+              "lorem ipsum dolor",
+            ]}
           />
+
           <List
-            text1="lorem ipsum dolor"
-            text2="lorem ipsum dolor"
-            text3="lorem ipsum dolor"
-            text4="lorem ipsum dolor"
-            text5="lorem ipsum dolor"
+            array={[
+              "lorem ipsum dolor",
+              "lorem ipsum dolor",
+              "lorem ipsum dolor",
+              "lorem ipsum dolor",
+              "lorem ipsum dolor",
+            ]}
           />
         </div>
       </Container>

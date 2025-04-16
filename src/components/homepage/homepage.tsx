@@ -4,9 +4,10 @@ import Container from "../container";
 import MainBlock from "../main";
 import Textcard from "../text-card";
 import Services from "./services";
-import Showcase from "@/app/showcase";
-import Component from "@/app/component";
-import Aboutus from "@/app/components/homepage/about-us"; // Adjust the path as necessary
+import Showcase from "@/components/showcase";
+import Component from "@/components/component";
+import Aboutus from "@/components/homepage/about-us"; // Adjust the path as necessary
+import { Copse } from "next/font/google";
 const HomePage = () => {
   return (
     <div>
@@ -38,17 +39,26 @@ const HomePage = () => {
           line={false}
         />
       </Container>
-      <Services />
-      <Showcase />
-      <Component
-        buttontext="view projects"
-        showParagraph={false}
-        showBottomHeading={false}
-        showBottomDivider={false}
-      />
-      <Container>
+      <div className="bg-zinc-800/30">
+        <Services />
+        <Showcase />
+        <Component
+          buttontext="view projects"
+          showParagraph={false}
+          showBottomHeading={false}
+          showBottomDivider={false}
+        />
         <Aboutus />
-      </Container>
+        <Container>
+          <Component
+            showBottomDivider={false}
+            showBottomHeading={false}
+            showParagraph={false}
+            buttontext="ontact us."
+            topheadingtext="dont be shy say hello"
+          />
+        </Container>
+      </div>
     </div>
   );
 };

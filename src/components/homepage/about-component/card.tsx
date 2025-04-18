@@ -9,7 +9,7 @@ interface CardProps {
 
 const card = ({ image, position, name, about }: CardProps) => {
   return (
-    <div className="mt-16">
+    <div className="mt-16 mb-16">
       <div>
         <img src={image} alt="" />
       </div>

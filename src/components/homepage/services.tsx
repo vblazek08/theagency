@@ -2,7 +2,7 @@ import Container from "../container";
 import List from "../list";
 const Services = () => {
   return (
-    <div className="flex flex-col items-center justify-center pt-12 bg-zinc-800/30">
+    <div className="flex flex-col items-center justify-center pt-12 ">
       <Container>
         <h3 className="font-extrabold text-2xl">all services</h3>
       </Container>

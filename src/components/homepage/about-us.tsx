@@ -3,7 +3,7 @@ import Aboutus from "./about-component/aboutus";
 
 const aboutus = () => {
   return (
-    <div className="mt-12 flex flex-col bg-zinc-800/30">
+    <div className="pt-12 flex flex-col ">
       <Container>
         <div className="bg-green-500 w-1/6 h-1"></div>
         <div>

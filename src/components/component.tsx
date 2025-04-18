@@ -28,7 +28,7 @@ const Component = ({
   topDividerClassName,
 }: ComponentProps) => {
   return (
-    <div className="flex flex-col items-center justify-center bg-white/0">
+    <div className="flex flex-col items-center justify-center bg-transparent">
       {showTopDivider && (
         <div className={`w-1 mt-12 h-8 bg-zinc-500 ${topDividerClassName}`} />
       )}

@@ -8,6 +8,7 @@ import Showcase from "@/components/showcase";
 import Component from "@/components/component";
 import Aboutus from "@/components/homepage/about-us"; // Adjust the path as necessary
 import { Copse } from "next/font/google";
+import Footer from "../footer";
 const HomePage = () => {
   return (
     <div>
@@ -40,24 +41,27 @@ const HomePage = () => {
         />
       </Container>
       <div className="bg-zinc-800/30">
-        <Services />
-        <Showcase />
-        <Component
-          buttontext="view projects"
-          showParagraph={false}
-          showBottomHeading={false}
-          showBottomDivider={false}
-        />
-        <Aboutus />
         <Container>
+          <Services />
+          <Showcase />
           <Component
-            showBottomDivider={false}
-            showBottomHeading={false}
+            buttontext="view projects"
             showParagraph={false}
-            buttontext="ontact us."
-            topheadingtext="dont be shy say hello"
+            showBottomHeading={false}
+            showBottomDivider={false}
           />
+          <Aboutus />
         </Container>
+      </div>
+      <Component
+        showBottomDivider={false}
+        showBottomHeading={false}
+        showParagraph={false}
+        buttontext="ontact us."
+        topheadingtext="dont be shy say hello"
+      />
+      <div className="bg-white">
+        <Footer />
       </div>
     </div>
   );

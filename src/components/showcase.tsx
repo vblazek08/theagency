@@ -3,7 +3,7 @@ import LogoShow from "./logo-show";
 
 const showcase = () => {
   return (
-    <div className="pt-12 flex flex-col items-center justify-center bg-zinc-800/30">
+    <div className="pt-12 flex flex-col items-center justify-center ">
       <div className="bg-green-600 h-2 w-1/6"></div>
       <div className="mt-8">
         <h2 className="font-extrabold text-4xl">latest work.</h2>

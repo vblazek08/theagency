@@ -57,7 +57,7 @@ const HomePage = () => {
         showBottomDivider={false}
         showBottomHeading={false}
         showParagraph={false}
-        buttontext="ontact us."
+        buttontext="contact us."
         topheadingtext="dont be shy say hello"
       />
       <div className="bg-white">

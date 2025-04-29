@@ -4,9 +4,9 @@ const Nav = () => {
       <a href="">
         <h1 className="font-extrabold text-2xl">theAgency</h1>
       </a>
-      <div className="hidden">
+      <div className="">
         <a href="">home.</a>
-        <a href="">about.</a>
+        <a href="/about">about.</a>
         <a href="">service.</a>
         <a href="">projects.</a>
         <a href="">testimonials.</a>

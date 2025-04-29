@@ -14,8 +14,8 @@ const HomePage = () => {
     <div>
       <div className=" bg-[url(https://websitedemos.net/wordpress-agency-04/wp-content/uploads/sites/98/2019/11/hero-bg.jpg)] bg-cover bg-center">
         <div className="bg-black/70">
+          <Nav />
           <Container>
-            <Nav />
             <MainBlock
               title="An Innovative Agency For Forward-thinking Brands."
               buttonText="find out more"

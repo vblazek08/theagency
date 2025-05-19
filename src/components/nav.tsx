@@ -8,7 +8,7 @@ const links = [
   { href: "/services", name: "services." },
   { href: "/projects", name: "projects." },
   { href: "/testimonials", name: "testimonials." },
-  { href: "/h", name: "contact." },
+  { href: "/contact", name: "contact." },
 ];
 
 const Nav = () => {

@@ -1,4 +1,4 @@
-import Component from "../components/component";
+import Component from "./component";
 import LogoShow from "./logo-show";
 
 const showcase = () => {

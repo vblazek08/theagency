@@ -2,7 +2,7 @@ import Button from "@/components/button";
 import Component from "@/components/component";
 import Container from "@/components/container";
 import Footer from "@/components/footer";
-import AboutUs from "@/components/homepage/about-us";
+import AboutUs from "@/components/about-us";
 import MainBlock from "@/components/main";
 import Main from "@/components/main";
 import Nav from "@/components/nav";
@@ -15,12 +15,11 @@ const about = () => {
           <Nav />
           <Container>
             <MainBlock
-              title="
-Who We Are?
-We’re A Digital Design & Branding Agency.
-"
+              question="What We Are"
+              title="We’re A Digital Design & Branding Agency."
               ShowButton={false}
               ShowContact={false}
+              ShowLine={false}
             />
           </Container>
         </div>

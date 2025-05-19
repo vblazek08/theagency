@@ -1,15 +1,13 @@
-import React from "react";
-import Nav from "../nav";
-import Container from "../container";
-import MainBlock from "../main";
-import Textcard from "../text-card";
-import Services from "./services";
-import Showcase from "@/components/showcase";
 import Component from "@/components/component";
-import Aboutus from "@/components/homepage/about-us"; // Adjust the path as necessary
-import { Copse } from "next/font/google";
-import Footer from "../footer";
-const HomePage = () => {
+import Container from "@/components/container";
+import Footer from "@/components/footer";
+import MainBlock from "@/components/main";
+import Nav from "@/components/nav";
+import Services from "@/components/services";
+import Statistics from "@/components/statistics";
+import Textcard from "@/components/text-card";
+
+const services = () => {
   return (
     <div>
       <div className=" bg-[url(https://websitedemos.net/wordpress-agency-04/wp-content/uploads/sites/98/2019/11/hero-bg.jpg)] bg-cover bg-center">
@@ -17,8 +15,12 @@ const HomePage = () => {
           <Nav />
           <Container>
             <MainBlock
-              title="An Innovative Agency For Forward-thinking Brands."
-              buttonText="find out more"
+              question="What We Do?"
+              title="
+              Ask Us About Branding, Design & Advertising.  "
+              ShowButton={false}
+              ShowContact={false}
+              ShowLine={false}
             />
           </Container>
         </div>
@@ -43,28 +45,21 @@ const HomePage = () => {
       <div className="bg-zinc-800/30">
         <Container>
           <Services />
-          <Showcase />
-          <Component
-            buttontext="view projects"
-            showParagraph={false}
-            showBottomHeading={false}
-            showBottomDivider={false}
-          />
-          <Aboutus />
+          <Statistics />
+          <div className="mt-12">
+            <Component
+              showBottomDivider={false}
+              showBottomHeading={false}
+              showParagraph={false}
+              buttontext="contact us."
+              topheadingtext="dont be shy, say hello."
+            />
+          </div>
         </Container>
-      </div>
-      <Component
-        showBottomDivider={false}
-        showBottomHeading={false}
-        showParagraph={false}
-        buttontext="contact us."
-        topheadingtext="dont be shy say hello"
-      />
-      <div className="bg-white">
         <Footer />
       </div>
     </div>
   );
 };
 
-export default HomePage;
+export default services;

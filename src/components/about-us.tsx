@@ -1,4 +1,4 @@
-import Container from "../container";
+import Container from "./container";
 import Aboutus from "./about-component/aboutus";
 
 const aboutus = () => {

@@ -2,6 +2,15 @@
 import { useState } from "react";
 import Container from "./container";
 
+const links = [
+  { href: "/", name: "home." },
+  { href: "/about", name: "about." },
+  { href: "/services", name: "services." },
+  { href: "/projects", name: "projects." },
+  { href: "/g", name: "testimonials." },
+  { href: "/h", name: "contact." },
+];
+
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
@@ -19,7 +28,8 @@ const Nav = () => {
         {isOpen ? "✕" : "☰"}
       </button>
       <div className={`mt-4 ${isOpen ? "block" : "hidden"} md:block`}>
-        <div
+        <ul
+          role="list"
           className="   flex flex-col md:flex-row gap-4
           fixed md:static
           top-15 left-0 w-full md:h-auto
@@ -28,25 +38,14 @@ const Nav = () => {
           p-4 md:p-0
           z-50"
         >
-          <a className="md:border-t-2 w-full block" href="">
-            home.
-          </a>
-          <a className="md:border-t-2 w-full block" href="/about">
-            about.
-          </a>
-          <a className="md:border-t-2 w-full block" href="">
-            service.
-          </a>
-          <a className="md:border-t-2 w-full block" href="">
-            projects.
-          </a>
-          <a className="md:border-t-2 w-full block" href="">
-            testimonials.
-          </a>
-          <a className="md:border-t-2 w-full block" href="">
-            contact.
-          </a>
-        </div>
+          {links.map((link, index) => (
+            <li key={index}>
+              <a className="md:border-t-2 w-full block" href={link.href}>
+                {link.name}
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
     </nav>
   );

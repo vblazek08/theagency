@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <div className="flex flex-col gap-8 justify-center mt-20">
+    <div className="flex flex-col gap-8 md:flex-row justify-center mt-20">
       <div className="flex items-center gap-2">
         <span className="material-symbols-outlined text-green-600">
           Location_on

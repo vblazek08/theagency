@@ -52,7 +52,7 @@ const Component = ({
       {showBottomDivider && <div className="w-1 mt-16 h-8 bg-zinc-500" />}
       {showBottomHeading && (
         <div className="mt-12 text-center">
-          <h2 className="font-extrabold text-2xl max-w-24">
+          <h2 className="font-extrabold text-2xl md:max-w-52 max-w-24">
             {bottomheadingtext}
           </h2>
         </div>

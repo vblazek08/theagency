@@ -45,6 +45,7 @@ Partner / Strategy
           about="Nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate."
         />
         <Card
+          className="flex-row-reverse"
           image="https://websitedemos.net/wordpress-agency-04/wp-content/uploads/sites/98/2019/11/team-member-02.jpg"
           position="Partner / Art Director"
           name="Brandon Harrison"

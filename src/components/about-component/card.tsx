@@ -5,22 +5,23 @@ interface CardProps {
   position: string;
   name: string;
   about: string;
+  className?: string;
 }
 
-const card = ({ image, position, name, about }: CardProps) => {
+const Card = ({ image, position, name, about, className = "" }: CardProps) => {
   return (
-    <div className="mt-16 mb-16">
+    <div className={`mt-16 mb-16 flex md:gap-12 ${className}`}>
       <div>
         <img src={image} alt="" />
       </div>
       <div>
         <h3 className="mt-4 font-bold">{position}</h3>
         <h2 className="mt-4 font-bold text-2xl">{name}</h2>
-        <p className="mt-8">{about}</p>
+        <p className=" max-w-96 mt-8">{about}</p>
+        <Button className="mt-12">more.</Button>
       </div>
-      <Button className="mt-12">more.</Button>
     </div>
   );
 };
 
-export default card;
+export default Card;

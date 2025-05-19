@@ -9,10 +9,10 @@ const Services = () => {
       </Container>
       <div className="bg-gray-500 w-1 h-12 mt-4 mb-4 justify-center items-center"></div>
       <Container>
-        <div>
-          <h2 className="font-extrabold text-3xl text-center">
-            this is how we can help you.
-          </h2>
+        <h2 className="font-extrabold text-3xl text-center">
+          this is how we can help you.
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-3  gap-4 mt-8">
           <List
             array={[
               "lorem ipsum dolor",

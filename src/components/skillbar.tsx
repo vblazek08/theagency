@@ -9,7 +9,7 @@ const SkillBar = ({ name, width }: SkillBarProps) => {
       <p className="mb-1">{name}</p>
       <div className="w-full bg-white">
         <div
-          className="bg-green-400 text-white text-sm text-start font-bold h-8 flex items-center"
+          className="bg-green-400 text-white text-sm text-start font-black h-8 flex items-center"
           style={{ width }}
         >
           <p className="ml-4">{width}</p>

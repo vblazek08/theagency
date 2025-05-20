@@ -20,8 +20,8 @@ const CeoCard = ({ name, position, Class = "" }: CeoCardProps) => {
       <div className="flex-1 flex items-center">
         <Container>
           <div>
-            <h3 className="mt-8 font-bold">{position}</h3>
-            <h2 className="font-bold text-3xl mt-4">{name}</h2>
+            <h3 className="mt-8 font-black">{position}</h3>
+            <h2 className="font-black text-3xl mt-4">{name}</h2>
             <div className="h-1 mt-8 max-w-32 bg-green-500"></div>
             <p className="mt-8 mb-8">
               ” I am text block. Click edit button to change this text. Lorem

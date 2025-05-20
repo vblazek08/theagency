@@ -35,12 +35,12 @@ const contact = () => {
         <div className="grid md:grid-cols-2 gap-8 mt-2 mb-8">
           <div className="mt-8">
             <div className="bg-green-500 h-1 w-34"></div>
-            <h3 className="font-bold text-3xl mt-8 mb-8">contact us</h3>
+            <h3 className="font-black text-3xl mt-8 mb-8">contact us</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
               tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
             </p>
-            <Contact />
+            <Contact className="md:flex-cols" />
           </div>
           <div className="flex flex-col items-center mt-8">
             <input
@@ -58,7 +58,7 @@ const contact = () => {
               placeholder="your message"
               rows={4}
             />
-            <Button className="mt-4 w-full font-bold" size="lg">
+            <Button className="mt-4 w-full font-black" size="lg">
               send message
             </Button>
           </div>

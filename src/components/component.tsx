@@ -34,7 +34,7 @@ const Component = ({
       )}
       {showTopHeading && (
         <div>
-          <h2 className="font-bold text-2xl mt-4">{topheadingtext}</h2>
+          <h2 className="font-black text-2xl mt-4">{topheadingtext}</h2>
         </div>
       )}
       {showButton && (

@@ -41,7 +41,7 @@ const about = () => {
             bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id
             elit. Duis sed odio sit amet nibh vulputate.
           </p>
-          <Button className="mt-8 font-bold" size="md">
+          <Button className="mt-8 font-black" size="md">
             get in touch
           </Button>
           <div className="grid md:grid-cols-3 gap-4 mt-8">

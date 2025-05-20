@@ -3,11 +3,11 @@ import SkillBar from "./skillbar";
 
 const statistics = () => {
   return (
-    <div>
-      <div className="flex flex-col items-center justify-center pt-12 ">
+    <div className="md:grid md:grid-cols-2 gap-8">
+      <div className="flex flex-col items-center md:items-start justify-center pt-12 ">
         <div className="h-1 w-16 bg-green-500"></div>
-        <h2 className="mt-12 font-bold text-2xl">statistics.</h2>
-        <p className="mt-16 text-center ">
+        <h2 className="mt-12 font-black text-2xl">statistics.</h2>
+        <p className="mt-8 text-center md:text-start ">
           Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
           lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis
           sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit

@@ -26,8 +26,8 @@ const MainBlock = ({
       <div className="bg-green-500 h-1.5 w-14"></div>
 
       <div className="mt-8">
-        <h2 className="text-xl font-bold md:max-w-80 max-w-44">{question}</h2>
-        <h2 className="text-2xl font-bold md:max-w-80 max-w-44 mt-8">
+        <h2 className="text-xl font-black md:max-w-80 max-w-44">{question}</h2>
+        <h2 className="text-2xl font-black md:max-w-80 max-w-44 mt-8">
           {title}
         </h2>
       </div>
@@ -38,7 +38,7 @@ const MainBlock = ({
       )}
       {ShowLine && <div className="bg-green-500 h-0.5 w-full mt-8"></div>}
 
-      {ShowContact && <Contact />}
+      {ShowContact && <Contact className="md:flex-row" />}
     </div>
   );
 };

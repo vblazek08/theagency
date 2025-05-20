@@ -1,6 +1,6 @@
-const Contact = () => {
+const Contact = ({ className = "" }) => {
   return (
-    <div className="flex flex-col gap-8 md:flex-row justify-center mt-20">
+    <div className={`flex flex-col gap-8  justify-center mt-20 ${className}`}>
       <div className="flex items-center gap-2">
         <span className="material-symbols-outlined text-green-600">
           Location_on
@@ -12,6 +12,7 @@ const Contact = () => {
         <span className="material-symbols-outlined text-green-600">mail</span>
         <a href="mailto:example@example.com">example@example.com</a>
       </div>
+
       <div className="flex items-center gap-2">
         <span className="material-symbols-outlined text-green-600">phone</span>
         <a href="tel:777777777">777777777</a>

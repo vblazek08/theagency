@@ -34,5 +34,6 @@ const CeoCard = ({ name, position, Class = "" }: CeoCardProps) => {
     </div>
   );
 };
+// test
 
 export default CeoCard;
